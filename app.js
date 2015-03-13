@@ -31,8 +31,8 @@ var socketIOOperations = function(socket){
     });
 };
 
-/*this common testing mosquitto broker.
- if you installed mosquitto broker please use your server name and port as given below.*/
+/* for Mosquitto broker currently using common online testing mosquitto broker.
+ if you installed mosquitto broker in your server please use your server name and port as given below.*/
 
 //var client  = mqtt.connect(config.mqtt.port,config.mqtt.host);
 
