@@ -1,0 +1,15 @@
+
+      Please read the steps before start the  Monitoring APP
+***************************************************************************
+
+1. Please before run the project make sure Node Js,MongoDB ,Redis installed in your system.
+
+2. please add your mangodb url in config file( for database connection)
+
+3. for Mqtt currently i'm configured "test.mosquitto.org" broker. if Mqtt you have installed in your pc please add host and port in config file.
+
+4. for testing this App use test folder have two js file for sending data via HTTP,MQTT protocols.(for HTTP POST Method)
+
+5. for subscribing real time data used Socket IO.
+
+6. parsed the data and inserted into two collection call rawdata and live data based on defined structure of data

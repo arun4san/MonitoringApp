@@ -1,0 +1,164 @@
+
+Possible Values of parameters
+**********************
+
+name -- string names ex.("Sample App")
+
+_id -- mongodb _id values ex.(54f3008ef95d73f110437439)
+
+index of from & to List -- integer ex. (0,1,2 .etc)
+
+
+API's URL and Response
+****************************
+1.Board
+*********
+
+create board
+**************
+
+Method  : GET
+URL : http://localhost:4000/boards/create?name={your_board_name}
+
+update board
+****************
+URL : http://localhost:4000/boards/update?board={your_board__id}&name={your_board_update_name}
+Method  : GET
+
+delete board
+**************
+URL : http://localhost:4000/boards/delete?board={your_board__id}
+Method  : GET
+
+getAllboard
+***************
+URL : http://localhost:4000/boards/getAllboard
+Method  : GET
+
+
+List
+**********
+
+create List
+**************
+
+Method  : GET
+URL : http://localhost:4000/list/create?listName={your_list_name}&board={your_board__id}
+
+update List
+****************
+URL : http://localhost:4000/list/update?list={your_list__id}&listName={your_list_update_name}
+Method  : GET
+
+delete List
+**************
+URL : http://localhost:4000/list/delete?list={your_list__id}
+Method  : GET
+
+getList
+***************
+URL : http://localhost:4000/list/getList?board={your_board__id}
+Method  : GET
+
+
+getAllList
+***************
+URL : http://localhost:4000/list/getAllList?card={true(or)false} //card info required or not
+Method  : GET
+
+ListReordering
+***************
+
+URL : http://localhost:4000/list/listReorder?board={your_board__id}&from={position_of_list}&to={to_index_position}
+Method  : GET
+
+
+Card
+**********
+
+create card
+**************
+
+Method  : GET
+URL : http://localhost:4000/card/create?cardName={your_card_name}&list={your list _id}
+
+update card
+****************
+URL : http://localhost:4000/card/update?card={your card _id}&cardName={your_card_updated_name}
+Method  : GET
+
+delete card
+**************
+URL : http://localhost:4000/card/delete?card={your card _id}
+Method  : GET
+
+getcards for given Crd
+***********************
+URL : http://localhost:4000/card/getCards?list={your list _id}
+Method  : GET
+
+
+getAllCard
+***************
+URL : http://localhost:4000/card/getAllCards
+Method  : GET
+
+Card Reordering
+***************
+
+URL : http://localhost:4000/cards/cardReorder?list={your list _id}&from={index of from card}&to={to of index card}
+Method  : GET
+
+moving card between lists
+*****************************
+
+URL : http://localhost:4000/cards/move?card ={your moving card _id}&source={your from list _id}&destination={your to list _id}
+Method  : GET
+
+
+Socket io subscribe for lists actions ( please use browser for Socket io subscription)
+*************************************************************************************
+
+
+URL : http://localhost:4000/lists/subscribe?list ={_id of subscribe list}
+Method  : GET
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

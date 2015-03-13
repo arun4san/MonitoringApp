@@ -1,0 +1,15 @@
+/**
+ * Created by fox on 12/3/15.
+ */
+
+
+// for testing via MQTT protocol
+var mqtt    = require('mqtt');
+var config = require('../config.js');
+
+
+var client = mqtt.connect('mqtt://test.mosquitto.org');
+
+
+client.publish(config.mqtt.topic,"*GS16,351535054835996,092409221014,,SYS:G79;V0.65;V1.0.2,GPS:A;10;N17.0822507;E77.8812042;0;0;26;0.89;1.14,COT:539183,ADC:13.90;3.83,DTT:123000;;;;4100F00;1,OBD:04410C0B4604410C0B3403410D0003410D0004411002DA03410B3903410F6E03412F9E0341044D0341044E04413110A50441310F7E03415101044121000004412100000341463F034111240341110D#");
+
